@@ -4,8 +4,6 @@ import recipeView from './views/recipeView.js';
 import 'core-js/stable';
 import 'regenerator-runtime/runtime';
 
-// const recipeContainer = document.querySelector('.recipe');
-
 // https://forkify-api.herokuapp.com/v2
 
 ///////////////////////////////////////
@@ -25,6 +23,17 @@ const controlRecipes = async () => {
     recipeView.renderError();
   }
 };
+
+const controlSearchResults = async () => {
+  try {
+    await model.loadSearchResults('pizza');
+    console.log(model.state.search.results);
+  } catch (err) {
+    console.log(err);
+  }
+};
+
+controlSearchResults();
 
 const init = () => {
   recipeView.addHandlerRender(controlRecipes);

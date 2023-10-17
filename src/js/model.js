@@ -49,7 +49,6 @@ export const loadSearchResults = async query => {
         image: rec.image_url,
       };
     });
-    console.log(state.search.results);
   } catch (err) {
     console.error(`${err} 💥💥💥`);
     throw err;

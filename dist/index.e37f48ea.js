@@ -580,7 +580,6 @@ var _modelJs = require("./model.js");
 var _recipeViewJs = require("./views/recipeView.js");
 var _recipeViewJsDefault = parcelHelpers.interopDefault(_recipeViewJs);
 var _runtime = require("regenerator-runtime/runtime");
-// const recipeContainer = document.querySelector('.recipe');
 // https://forkify-api.herokuapp.com/v2
 ///////////////////////////////////////
 const controlRecipes = async ()=>{
@@ -596,6 +595,15 @@ const controlRecipes = async ()=>{
         (0, _recipeViewJsDefault.default).renderError();
     }
 };
+const controlSearchResults = async ()=>{
+    try {
+        await _modelJs.loadSearchResults("pizza");
+        console.log(_modelJs.state.search.results);
+    } catch (err) {
+        console.log(err);
+    }
+};
+controlSearchResults();
 const init = ()=>{
     (0, _recipeViewJsDefault.default).addHandlerRender(controlRecipes);
 };
@@ -2510,7 +2518,6 @@ const loadSearchResults = async (query)=>{
                 image: rec.image_url
             };
         });
-        console.log(state.search.results);
     } catch (err) {
         console.error(`${err} 💥💥💥`);
         throw err;
