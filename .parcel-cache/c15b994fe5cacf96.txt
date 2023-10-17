@@ -57,7 +57,7 @@
 94C:\Users\calab\OneDrive\Escritorio\forkify\node_modules\core-js\internals\engine-v8-version.js133415860184785695 0
 82C:\Users\calab\OneDrive\Escritorio\forkify\node_modules\core-js\full\map\update.js133415860221995677 0
 84C:\Users\calab\OneDrive\Escritorio\forkify\node_modules\core-js\es\string\pad-end.js133415860209375719 0
-47C:\Users\calab\OneDrive\Escritorio\forkify\dist133416014161306466 1
+47C:\Users\calab\OneDrive\Escritorio\forkify\dist133416782691502489 1
 95C:\Users\calab\OneDrive\Escritorio\forkify\node_modules\core-js\modules\esnext.math.f16round.js133415860190915681 0
 93C:\Users\calab\OneDrive\Escritorio\forkify\node_modules\csso\node_modules\css-tree\cjs\parser133377294789666232 1
 76C:\Users\calab\OneDrive\Escritorio\forkify\node_modules\stable\stable.min.js133377294773154148 0
@@ -294,7 +294,7 @@
 89C:\Users\calab\OneDrive\Escritorio\forkify\node_modules\@swc\helpers\_\_iterable_to_array133377294797007100 1
 105C:\Users\calab\OneDrive\Escritorio\forkify\node_modules\@parcel\utils\test\input\sourcemap\source-root.js133377294787976224 0
 88C:\Users\calab\OneDrive\Escritorio\forkify\node_modules\core-js\stable\date\to-string.js133415860220000710 0
-63C:\Users\calab\OneDrive\Escritorio\forkify\src\js\controller.js133416008471027656 0
+63C:\Users\calab\OneDrive\Escritorio\forkify\src\js\controller.js133416782691012488 0
 79C:\Users\calab\OneDrive\Escritorio\forkify\node_modules\semver\functions\neq.js133377294782070583 0
 104C:\Users\calab\OneDrive\Escritorio\forkify\node_modules\core-js\internals\copy-constructor-properties.js133415860182455650 0
 80C:\Users\calab\OneDrive\Escritorio\forkify\node_modules\core-js\es\math\trunc.js133415860221020666 0
@@ -310,7 +310,7 @@
 60C:\Users\calab\OneDrive\Escritorio\forkify\src\js\helpers.js133416014160716473 0
 76C:\Users\calab\OneDrive\Escritorio\forkify\node_modules\js-yaml\package.json133377294782600583 0
 58C:\Users\calab\OneDrive\Escritorio\forkify\src\js\model.js133416006845717162 0
-69C:\Users\calab\OneDrive\Escritorio\forkify\src\js\views\recipeView.js133415957458123488 0
+69C:\Users\calab\OneDrive\Escritorio\forkify\src\js\views\recipeView.js133416779758725359 0
 104C:\Users\calab\OneDrive\Escritorio\forkify\node_modules\caniuse-lite\data\features\css-featurequeries.js133377294791296231 0
 104C:\Users\calab\OneDrive\Escritorio\forkify\node_modules\@parcel\core\test\fixtures\common-targets-ignore133377294792136226 1
 90C:\Users\calab\OneDrive\Escritorio\forkify\node_modules\caniuse-lite\data\features\colr.js133377294789606236 0
@@ -2003,7 +2003,7 @@
 84C:\Users\calab\OneDrive\Escritorio\forkify\node_modules\css-select\lib\attributes.js133377294773764164 0
 83C:\Users\calab\OneDrive\Escritorio\forkify\node_modules\css-tree\lib\lexer\trace.js133377294794917129 0
 91C:\Users\calab\OneDrive\Escritorio\forkify\node_modules\mdn-data\css\properties.schema.json133377294779661610 0
-68C:\Users\calab\OneDrive\Escritorio\forkify\dist\favicon.8b2f57bf.png133415998398217516 0
+68C:\Users\calab\OneDrive\Escritorio\forkify\dist\favicon.8b2f57bf.png133416770594999271 0
 84C:\Users\calab\OneDrive\Escritorio\forkify\node_modules\htmlnano\docs\versioned_docs133377294785200603 1
 90C:\Users\calab\OneDrive\Escritorio\forkify\node_modules\node-addon-api\tools\check-napi.js133377294778091603 0
 91C:\Users\calab\OneDrive\Escritorio\forkify\node_modules\@swc\helpers\_\_array_like_to_array133377294795217092 1
@@ -8475,7 +8475,7 @@
 110C:\Users\calab\OneDrive\Escritorio\forkify\node_modules\@swc\helpers\lib\_class_static_private_field_update.js133377294791186222 0
 108C:\Users\calab\OneDrive\Escritorio\forkify\node_modules\@swc\helpers\lib\_class_static_private_method_get.js133377294791236217 0
 86C:\Users\calab\OneDrive\Escritorio\forkify\node_modules\@swc\helpers\lib\_construct.js133377294791276216 0
-65C:\Users\calab\OneDrive\Escritorio\forkify\dist\index.e37f48ea.js133416014161246466 0
+65C:\Users\calab\OneDrive\Escritorio\forkify\dist\index.e37f48ea.js133416782691452486 0
 90C:\Users\calab\OneDrive\Escritorio\forkify\node_modules\@swc\helpers\esm\_object_spread.js133377294792496223 0
 89C:\Users\calab\OneDrive\Escritorio\forkify\node_modules\@swc\helpers\lib\_create_class.js133377294791316228 0
 89C:\Users\calab\OneDrive\Escritorio\forkify\node_modules\@swc\helpers\lib\_create_super.js133377294791496262 0
@@ -8952,7 +8952,7 @@
 104C:\Users\calab\OneDrive\Escritorio\forkify\node_modules\@parcel\optimizer-svgo\node_modules\mdn-data\css133377294782020577 1
 105C:\Users\calab\OneDrive\Escritorio\forkify\node_modules\@parcel\optimizer-svgo\node_modules\mdn-data\l10n133377294776661609 1
 113C:\Users\calab\OneDrive\Escritorio\forkify\node_modules\@parcel\optimizer-svgo\node_modules\mdn-data\package.json133377294778411625 0
-58C:\Users\calab\OneDrive\Escritorio\forkify\dist\index.html133415998398317532 0
+58C:\Users\calab\OneDrive\Escritorio\forkify\dist\index.html133416770595124267 0
 110C:\Users\calab\OneDrive\Escritorio\forkify\node_modules\@parcel\optimizer-svgo\node_modules\mdn-data\README.md133377294782180569 0
 114C:\Users\calab\OneDrive\Escritorio\forkify\node_modules\@parcel\optimizer-svgo\node_modules\mdn-data\l10n\index.js133377294773734153 0
 125C:\Users\calab\OneDrive\Escritorio\forkify\node_modules\@parcel\optimizer-svgo\node_modules\mdn-data\css\at-rules.schema.json133377294776381611 0
@@ -9706,11 +9706,11 @@
 87C:\Users\calab\OneDrive\Escritorio\forkify\node_modules\.bin\update-browserslist-db.cmd133377294803067096 0
 87C:\Users\calab\OneDrive\Escritorio\forkify\node_modules\.bin\update-browserslist-db.ps1133377294803067096 0
 67C:\Users\calab\OneDrive\Escritorio\forkify\dist\forkify.3464ddca.js133415835042085589 0
-66C:\Users\calab\OneDrive\Escritorio\forkify\dist\icons.21bad73c.svg133415998398472531 0
-66C:\Users\calab\OneDrive\Escritorio\forkify\dist\icons.dfd7a6db.svg133415998398477519 0
+66C:\Users\calab\OneDrive\Escritorio\forkify\dist\icons.21bad73c.svg133416770595184257 0
+66C:\Users\calab\OneDrive\Escritorio\forkify\dist\icons.dfd7a6db.svg133416770595184257 0
 69C:\Users\calab\OneDrive\Escritorio\forkify\dist\index.62406edb.js.map133415844430579518 0
-69C:\Users\calab\OneDrive\Escritorio\forkify\dist\index.e37f48ea.js.map133416014161296488 0
-66C:\Users\calab\OneDrive\Escritorio\forkify\dist\index.f7626f62.css133415998398237533 0
-70C:\Users\calab\OneDrive\Escritorio\forkify\dist\index.f7626f62.css.map133415998398292504 0
-65C:\Users\calab\OneDrive\Escritorio\forkify\dist\logo.726d37a8.png133415998398557497 0
+69C:\Users\calab\OneDrive\Escritorio\forkify\dist\index.e37f48ea.js.map133416782691487510 0
+66C:\Users\calab\OneDrive\Escritorio\forkify\dist\index.f7626f62.css133416770594974265 0
+70C:\Users\calab\OneDrive\Escritorio\forkify\dist\index.f7626f62.css.map133416770595094279 0
+65C:\Users\calab\OneDrive\Escritorio\forkify\dist\logo.726d37a8.png133416770595699267 0
 74C:\Users\calab\OneDrive\Escritorio\forkify\dist\logo.726d37a8.png.10440.2d133415872827840930 0
