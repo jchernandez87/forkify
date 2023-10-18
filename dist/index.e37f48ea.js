@@ -608,14 +608,15 @@ const controlSearchResults = async ()=>{
         const query = (0, _searchViewJsDefault.default).getQuery();
         if (!query) return;
         await _modelJs.loadSearchResults(query);
-        (0, _resultsViewJsDefault.default).render(_modelJs.getSearchResultsPage(6));
+        (0, _resultsViewJsDefault.default).render(_modelJs.getSearchResultsPage(3));
         (0, _paginationViewJsDefault.default).render(_modelJs.state.search);
     } catch (err) {
         console.log(err);
     }
 };
-const controlPagination = ()=>{
-    console.log("Pag Controller");
+const controlPagination = (goToPage)=>{
+    (0, _resultsViewJsDefault.default).render(_modelJs.getSearchResultsPage(goToPage));
+    (0, _paginationViewJsDefault.default).render(_modelJs.state.search);
 };
 const init = ()=>{
     (0, _recipeViewJsDefault.default).addHandlerRender(controlRecipes);
@@ -3108,13 +3109,14 @@ class PaginationView extends (0, _viewJsDefault.default) {
     addHandlerClick(handler) {
         this._parentElement.addEventListener("click", (e)=>{
             const btn = e.target.closest(".btn--inline");
-            console.log(btn);
-            handler();
+            if (!btn) return;
+            const goToPage = +btn.dataset.goto;
+            handler(goToPage);
         });
     }
     _generatePrevBtn(page) {
         return `
-      <button class="btn--inline pagination__btn--prev">
+      <button data-goto="${page - 1}" class="btn--inline pagination__btn--prev">
         <svg class="search__icon">
           <use href="${0, _iconsSvgDefault.default}#icon-arrow-left"></use>
         </svg>
@@ -3124,7 +3126,7 @@ class PaginationView extends (0, _viewJsDefault.default) {
     }
     _generateNextBtn(page) {
         return `
-        <button class="btn--inline pagination__btn--next">
+        <button data-goto="${page + 1}" class="btn--inline pagination__btn--next">
           <span>Page ${page + 1}</span>
           <svg class="search__icon">
             <use href="${0, _iconsSvgDefault.default}#icon-arrow-right"></use>
