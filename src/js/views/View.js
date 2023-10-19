@@ -13,9 +13,6 @@ export default class View {
   }
 
   update(data) {
-    if (!data || (Array.isArray(data) && data.length === 0))
-      return this.renderError();
-
     this._data = data;
     const newMarkup = this._generateMarkup();
 
@@ -24,9 +21,6 @@ export default class View {
     const currentElements = Array.from(
       this._parentElement.querySelectorAll('*')
     );
-
-    // console.log(newElements);
-    // console.log(currentElements);
 
     newElements.forEach((newEl, i) => {
       const currEl = currentElements[i];
