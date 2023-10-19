@@ -20,8 +20,29 @@ export default class View {
     const newMarkup = this._generateMarkup();
 
     const newDOM = document.createRange().createContextualFragment(newMarkup);
-    const newElements = newDOM.querySelectorAll('*');
-    console.log(newElements);
+    const newElements = Array.from(newDOM.querySelectorAll('*'));
+    const currentElements = Array.from(
+      this._parentElement.querySelectorAll('*')
+    );
+
+    // console.log(newElements);
+    // console.log(currentElements);
+
+    newElements.forEach((newEl, i) => {
+      const currEl = currentElements[i];
+
+      if (
+        !newEl.isEqualNode(currEl) &&
+        newEl.firstChild?.nodeValue.trim() !== ''
+      ) {
+        currEl.textContent = newEl.textContent;
+      }
+
+      if (!newEl.isEqualNode(currEl))
+        Array.from(newEl.attributes).forEach(attr =>
+          currEl.setAttribute(attr.name, attr.value)
+        );
+    });
   }
 
   _clear() {
