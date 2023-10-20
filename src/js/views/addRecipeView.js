@@ -2,67 +2,26 @@ import View from './View.js';
 import icons from 'url:../../img/icons.svg';
 
 class AddRecipeView extends View {
-  _parentElement = document.querySelector('.pagination');
+  _parentElement = document.querySelector('.upload');
 
-  addHandlerClick(handler) {
-    this._parentElement.addEventListener('click', e => {
-      const btn = e.target.closest('.btn--inline');
-      if (!btn) return;
+  _window = document.querySelector('.add-recipe-window');
+  _overlay = document.querySelector('.overlay');
+  _btnOpen = document.querySelector('.nav__btn--add--recipe');
+  _btnClose = document.querySelector('.btn--close-modal');
 
-      const goToPage = +btn.dataset.goto;
+  constructor() {
+    super();
+    this._addHandlerShowWindow();
+  }
 
-      handler(goToPage);
+  _addHandlerShowWindow() {
+    this._btnOpen.addEventListener('click', () => {
+      this._window.classList.toggle('.hidden');
+      this._overlay.classList.toggle('.hidden');
     });
   }
 
-  _generatePrevBtn(page) {
-    return `
-      <button data-goto="${page - 1}" class="btn--inline pagination__btn--prev">
-        <svg class="search__icon">
-          <use href="${icons}#icon-arrow-left"></use>
-        </svg>
-        <span>Page ${page - 1}</span>
-      </button>
-    `;
-  }
-
-  _generateNextBtn(page) {
-    return `
-        <button data-goto="${
-          page + 1
-        }" class="btn--inline pagination__btn--next">
-          <span>Page ${page + 1}</span>
-          <svg class="search__icon">
-            <use href="${icons}#icon-arrow-right"></use>
-          </svg>
-        </button>
-      `;
-  }
-
-  _generateMarkup() {
-    const currPage = this._data.page;
-
-    const numPages = Math.ceil(
-      this._data.results.length / this._data.resultsPerPage
-    );
-
-    if (currPage === 1 && numPages > 1) {
-      return `${this._generateNextBtn(currPage)};`;
-    }
-
-    if (currPage === numPages && numPages > 1) {
-      return `${this._generatePrevBtn(currPage)}`;
-    }
-
-    if (currPage < numPages) {
-      return `
-        ${this._generatePrevBtn(currPage)}
-        ${this._generateNextBtn(currPage)}
-      `;
-    }
-
-    return '';
-  }
+  _generateMarkup() {}
 }
 
 export default new AddRecipeView();
